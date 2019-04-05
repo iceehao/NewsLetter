@@ -1,0 +1,24 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "newsletter sign up webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iceehao/Newsletter.git"
+  },
+  "author": "Hao Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iceehao/Newsletter/issues"
+  },
+  "homepage": "https://github.com/iceehao/Newsletter#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
