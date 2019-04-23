@@ -1,4 +1,5 @@
 //jshint esversion:6
+require('dotenv').config();
 
 const express= require("express"); // download express everytime
 const bodyParser = require('body-parser');// download body parser everytime
@@ -40,7 +41,8 @@ app.post("/",function(req,res){
     url:"https://us20.api.mailchimp.com/3.0/lists/a443e30dca",
     method: "POST",
     headers:{ // node js basic Authorization code
-      "Authorization":"Hao 52222cc179b5dd14aec0946b00f6c5d7-us20"
+      "Authorization":process.env.API_KEY
+
     },
       body: jsonData, // body is basically the name format for chimp and json DATA stores all the "DATA"
   };
